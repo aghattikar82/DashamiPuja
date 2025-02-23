@@ -1,0 +1,106 @@
+.live-stream-section {
+    background: linear-gradient(45deg, #f8f5f0 0%, #fffdfa 100%);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../src/assets/images/hero-bg.jpg');
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  .ornate-heading {
+    font-family: 'Playfair Display', serif;
+    color: #2c1810;
+    position: relative;
+  }
+  
+  .divider {
+    width: 100px;
+    height: 3px;
+    background: #d4af37;
+    margin: 1rem auto;
+    position: relative;
+  }
+  
+  .section-subtitle {
+    color: #6c757d;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+  }
+  
+  .stream-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stream-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .stream-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stream-title {
+    background: #d4af37;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .stream-info {
+    padding: 1.5rem;
+  }
+  
+  .stream-time {
+    color: #d4af37;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stream-description {
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .stream-card {
+      margin-bottom: 1.5rem;
+    }
+    
+    .stream-title {
+      font-size: 1.25rem;
+    }
+    
+    .stream-info {
+      padding: 1rem;
+    }
+  }

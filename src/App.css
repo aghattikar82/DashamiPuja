@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,126 @@
   to {
     transform: rotate(360deg);
   }
+}
+.ornate-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+.divider {
+  width: 100px;
+  height: 3px;
+  background: #d4af37;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.timeline-marker {
+  transition: transform 0.3s ease;
+}
+
+.timeline-marker:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background-color: #f8f9fa;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+:root {
+  --primary-color: #d32f2f;
+  --secondary-color: #ffa000;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url('./assets/images/hero-bg.jpg');
+  background-size: cover;
+  color: white;
+  padding: 8rem 0;
+  border-radius: 15px;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 4rem;
 }

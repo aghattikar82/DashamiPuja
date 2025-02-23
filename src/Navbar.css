@@ -1,0 +1,111 @@
+.custom-navbar {
+    background: rgba(25, 25, 25, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .brand-container {
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .brand-logo {
+    height: 45px;
+    width: 45px;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));
+  }
+  
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    color: #ffd700 !important;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    font-size: 1.5rem;
+  }
+  
+  .brand-sub {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #fff !important;
+    margin-top: -5px;
+  }
+  
+  .nav-link-item {
+    color: #fff !important;
+    margin: 0 15px !important;
+    padding: 10px 20px !important;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link-item:hover::before {
+    width: 100%;
+  }
+  
+  .nav-link-item.active {
+    color: #ffd700 !important;
+  }
+  
+  .nav-link-item.active::before {
+    width: 100%;
+  }
+  
+  .live-link {
+    position: relative;
+    margin-right: 20px !important;
+  }
+  
+  .live-badge {
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    background: #dc3545;
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .hamburger {
+    border-color: rgba(255, 215, 0, 0.5) !important;
+  }
+  
+  .hamburger .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 215, 0, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  @media (max-width: 991px) {
+    .nav-link-item {
+      margin: 5px 0 !important;
+      padding: 12px 20px !important;
+    }
+    
+    .live-badge {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
