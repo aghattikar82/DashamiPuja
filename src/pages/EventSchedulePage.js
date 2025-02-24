@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaClock, FaPrayingHands, FaMusic, FaUtensils } from 'react-icons/fa';
 import '../EventSchedulePage.css';
 
@@ -109,9 +109,9 @@ const EventSchedulePage = () => {
                     <span className="stream-event">Evening Aarti</span>
                   </div>
                 </div>
-                <button className="btn-reminder mt-3">
+                <Button variant="primary" className="btn-reminder mt-3">
                   Set Calendar Reminder
-                </button>
+                </Button>
               </Card.Body>
             </Card>
           </Col>
